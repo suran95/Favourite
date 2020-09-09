@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>즐겨찾기</title>
+      <style> 
+      html, body {
+            height: 100%;
+            background-color: #f5f5fb;
+        }
+
+      #menu {
+
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: #4c4cab;
+        width: 200px;
+        height: 100%;
+        float: left;
+      }
+
+      #Dogo {
+        font-size: 23px;
+        font-weight:bold; 
+        margin: 0;
+        padding: 0;
+        color: white;
+        margin-top: 30px;
+      }
+
+      #contents {
+        font-size: 30px;
+        font-weight:bold; 
+        margin: 0;
+        padding: 0;
+        float: left;
+        
+      }
+     
+      </style>
+      </head> 
+      <body>
+
+      <div id = 'menu'>
+      
+      <div id = 'Dogo'>
+      Dogo & Favourite
+      </div>
+      <br>
+
+      Home<br><br>
+      Favourite<br><br>
+      Todo<br><br>
+      </div>
+
+      <div id = 'contents'>
+      즐겨찾기
+      </div>
+      <br>
+      인벤2
+      <br>
+      테스트2
+      <br>
+      테스트3
+      <br>
+      테스트4
+
+
+     {% for favorite in favorites %}
+     <div>
+     {{favorite.name}}
+     </div>
+     {%endfor%}
+
+  </body>
+</html>
